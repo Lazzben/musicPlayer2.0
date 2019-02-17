@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+section,
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.layout {
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .layout {
+    width: 650px;
+  }
+}
+
+@media (min-width: 800px) {
+  .layout {
+    width: 750px;
+  }
+}
+
+@media (min-width: 900px) {
+  .layout {
+    width: 850px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .layout {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .layout {
+    width: 1150px;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  background: url(http://cdn.jirengu.com/book.jirengu.com/img/1.jpg) no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+main {
+  height: calc(100% - 24vh);
+  padding-top: 12vh;
+}
+
+main .aside {
+  float: left;
+}
+
+main .aside>figure {
+  width: 45vh;
+  height: 45vh;
+  background: url(http://cdn.jirengu.com/book.jirengu.com/img/1.jpg);
+  background-size: cover;
+}
+
+main .aside .action {
+  display: flex;
+  margin-top: 4vh;
+}
+
+main .aside .action .iconfont {
+  font-size: 5vh;
+  color: rgba(255, 255, 255, 0.4);
+  flex: 1;
+  text-align: center;
+  transition: color .4s;
+  cursor: pointer;
+}
+
+main .aside .action .iconfont:hover{
+  color: rgba(255, 255, 255, 0.8)
+}
+
+main .detail {
+  margin-left: 60vh;
+  color: #fff;
+}
+
+main .detail .tag {
+  font-size: 2vh;
+  background: #2e6eec;
+  padding: .4em .8em; 
+}
+
+main .detail h1 {
+  font-size: 6vh;
+  margin-top: 2vh;
+}
+
+main .detail .icon {
+  display: flex;
+  margin-top: 10vh;
+}
+
+main .detail .icon li {
+  flex: 1;
+}
+
+main .detail .iconfont {
+  font-size: 3vh;
+}
+
+main .detail .bar-area {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+main .detail .bar-area .bar {
+  position: relative;
+  flex: 1;
+  height: .8vh;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: .2vh;
+  cursor: pointer;
+}
+
+main .detail .bar-area .totaltime {
+  width: 3vh;
+  font-size: 2vh;
+  margin-left: 1vh;
+}
+
+main .detail .bar-area .bar .bar-progress {
+  background: #fff;
+  position: absolute;
+  width: 0%;
+  height: .8vh;
+  border-radius: .2vh;
+  transition: width .5s;
+}
+
+main .author {
+  font-size: 3vh;
+  margin-top: 3vh;
+}
+
+main .lyric {
+  font-size: 2vh;
+  margin-top: 2vh;
+  color: rgba(255, 255, 255, 1);
+}
+
+footer {
+  height: 24vh;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2)
+}
+
+footer>.layout{
+  position: relative;
+}
+
+footer ul {
+  position: absolute;
+  left: 0;
+  width: 0;
+}
+
+footer .box{
+  position: relative;
+  overflow: hidden;
+  height: 24vh;
+}
+
+footer .iconfont {
+  font-size: 10vh;
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  transition: all .4s;
+  cursor: pointer;
+  opacity: 0;
+  top: 5vh;
+}
+
+footer:hover .iconfont {
+  opacity: 1;
+}
+
+footer .iconfont:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer h3 {
+  font-size: 2vh;
+  margin-top: 1vh;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+footer li.active {
+box-shadow: 0 0 .5vh .5vh rgba(255, 255, 255, 0.8)
+}
+
+footer li {
+  float: left;
+  width: 20vh;
+  height: 20vh;
+  text-align: center;
+  cursor: pointer;
+  margin: 2vh 2vh 1vh 2vh;
+}
+
+footer li:hover {
+  box-shadow: 0 0 .5vh .5vh rgba(255, 255, 255, 0.8)
+}
+
+footer li .cover {
+  height: 16vh;
+  background-size: cover;
+  background-position: center center;
+  background: url(http://cdn.jirengu.com/book.jirengu.com/img/1.jpg)
+
+}
+
+footer .icon-ios-arrow-back {
+  left: -10vh;
+}
+
+footer .icon-ios-arrow-forward {
+  right: -10vh;
+}
