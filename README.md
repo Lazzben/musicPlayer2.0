@@ -1,6 +1,7 @@
 # musicPlayer2.0
 ## 项目标题 小黄音乐电台
 代码地址：https://github.com/Lazzben/musicPlayer2.0
+
 预览地址：[https://lazzben.github.io/musicPlayer2.0/index.html](https://lazzben.github.io/musicPlayer2.0/index.html)
 
 ---
@@ -11,8 +12,9 @@
 3. 能够控制音乐的进度条，显示播放时间
 ---
 ## 项目技术细节介绍
-####该项目可分为三大块：播放面板、音乐分类面板、自定义事件中心
-#####自定义事件中心：主要实现播放面板和音乐分类面板的事件交互
+该项目可分为三大块：播放面板、音乐分类面板、自定义事件中心
+
+自定义事件中心：主要实现播放面板和音乐分类面板的事件交互
 1. `.on()`  触发事件后做的事
 2. `.fire()` 用于事件的触发
 
