@@ -77,7 +77,7 @@ var footer = {
   getData: function(){
     var _this = this
     $.ajax({
-      url: 'http://api.jirengu.com/fm/getChannels.php',
+      url: '//jirenguapi.applinzi.com/fm/getChannels.php',
       dataType: 'json',
       type: 'get'
     }).done(function(ret){
@@ -163,7 +163,7 @@ var main = {
   loadMusic: function(callback){
     var _this = this
     $.ajax({
-      url: 'http://api.jirengu.com/fm/getSong.php',
+      url: '//jirenguapi.applinzi.com/fm/getSong.php',
       type: 'get',
       dataType: 'json',
       data: {
@@ -180,7 +180,7 @@ var main = {
   loadLyric: function(){
     var _this = this
     $.ajax({
-      url: 'http://api.jirengu.com/fm/getLyric.php',
+      url: '//jirenguapi.applinzi.com/fm/getLyric.php',
       type: 'get',
       dataType: 'json',
       data: {
